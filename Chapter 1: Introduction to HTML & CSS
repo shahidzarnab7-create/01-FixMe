@@ -1,11 +1,15 @@
+<!DOCTYPE html>
 <html>
-
+<head>
 <p>
 	<h1>
 
 Lets make white sauce pasta 
+<img src="pasta.jpg"
 	</h1>
 </p>
+</head>
+<body>
 
 <p>
 	<h2>	
@@ -119,6 +123,7 @@ Ingredients:
 <h3>
 Directions: 
 </h3>
+
 </p>
 
 <p>
@@ -163,5 +168,5 @@ Directions:
 </p>
 
 10-Sprinkle red chili crushed, fresh parsley & serve!
- 
+</body>
 </html>
