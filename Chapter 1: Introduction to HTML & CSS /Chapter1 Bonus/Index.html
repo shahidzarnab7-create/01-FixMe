@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Resource Bonus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HTML and CSS Resource Bonus</h1>
+        <p>This guide provides a quick reference to essential HTML tags and CSS properties for web development.</p>
+
+        <h2>HTML Tags</h2>
+        <p>Below is a list of commonly used HTML tags, their purposes, and examples.</p>
+
+        <div>
+            <h3>h1 to h6 - Headings</h3>
+            <p>Headings are used to define the structure and hierarchy of content. h1 is the most important, h6 the least.</p>
+            <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Sub-subheading&lt;/h3&gt;</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>p - Paragraph</h3>
+            <p>Defines a paragraph of text.</p>
+            <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+        </div>
+
+
+
+        <div>
+            <h3>a - Anchor/Link</h3>
+            <p>Creates a hyperlink to another page or resource.</p>
+            <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+        </div>
+
+
+
+        <div>
+            <h3>img - Image</h3>
+            <p>Embeds an image in the document.</p>
+            <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
+        </div>
+
+
+
+        <div>
+            <h3>ul and li - Unordered List</h3>
+            <p>Creates a bulleted list.</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+
+        <div>
+            <h3>ol and li - Ordered List</h3>
+            <p>Creates a numbered list.</p>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+
+        <div>
+            <h3>div - Division</h3>
+            <p>A generic container for grouping content.</p>
+            <pre><code>&lt;div class="container"&gt;
+    &lt;p&gt;Content inside a div&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+
+
+
+
+        <div>
+            <h3>span - Inline Container</h3>
+            <p>An inline container for styling or scripting.</p>
+            <pre><code>&lt;p&gt;This is a &lt;span style="color: red;"&gt;red span&lt;/span&gt; inside text.&lt;/p&gt;</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>strong - Strong Emphasis</h3>
+            <p>Makes text bold to indicate importance.</p>
+            <pre><code>&lt;p&gt;This is &lt;strong&gt;important text&lt;/strong&gt;.&lt;/p&gt;</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>em - Emphasis</h3>
+            <p>Makes text italic to indicate emphasis.</p>
+            <pre><code>&lt;p&gt;This is &lt;em&gt;emphasized text&lt;/em&gt;.&lt;/p&gt;</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>br - Line Break</h3>
+            <p>Inserts a line break.</p>
+            <pre><code>&lt;p&gt;First line&lt;br&gt;Second line&lt;/p&gt;</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>hr - Horizontal Rule</h3>
+            <p>Creates a horizontal line to separate content.</p>
+            <pre><code>&lt;p&gt;Content above&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Content below&lt;/p&gt;</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>form - Form</h3>
+            <p>Creates a form for user input.</p>
+            <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+
+        <div>
+            <h3>input - Input Field</h3>
+            <p>Creates an input field for user data.</p>
+            <pre><code>&lt;input type="text" placeholder="Enter text"&gt;
+&lt;input type="email" placeholder="email@example.com"&gt;
+&lt;input type="password" placeholder="Password"&gt;</code></pre>
+        </div>
+
+        <div>
+            <h3>button - Button</h3>
+            <p>Creates a clickable button.</p>
+            <pre><code>&lt;button type="button" onclick="alert('Hello!')"&gt;Click Me&lt;/button&gt;
+&lt;button type="submit"&gt;Submit Form&lt;/button&gt;</code></pre>
+        </div>
+
+        <div>
+            <h3>table, thead, tbody, tr, th, td - Table Elements</h3>
+            <p>Creates structured tables for data display.</p>
+            <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+
+        <div>
+            <h3>header, footer, nav, main, section - Semantic Elements</h3>
+            <p>HTML5 semantic elements for better structure and accessibility.</p>
+            <pre><code>&lt;header&gt;
+    &lt;nav&gt;Navigation menu&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+    &lt;section&gt;Content section&lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;Footer content&lt;/footer&gt;</code></pre>
+        </div>
+
+        <h2>CSS Properties</h2>
+        <p>Essential CSS properties for styling web pages.</p>
+
+        <div>
+            <h3>color</h3>
+            <p>Sets the color of text.</p>
+            <pre><code>p {
+    color: blue;
+}</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>background-color</h3>
+            <p>Sets the background color of an element.</p>
+            <pre><code>body {
+    background-color: lightgray;
+}</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>font-family</h3>
+            <p>Specifies the font family for text.</p>
+            <pre><code>body {
+    font-family: Arial, sans-serif;
+}</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>font-size</h3>
+            <p>Sets the size of the font.</p>
+            <pre><code>h1 {
+    font-size: 2em;
+}</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>margin</h3>
+            <p>Sets the margin around an element.</p>
+            <pre><code>p {
+    margin: 10px;
+}</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>padding</h3>
+            <p>Sets the padding inside an element.</p>
+            <pre><code>div {
+    padding: 20px;
+}
+</code></pre>
+        </div>
+
+
+
+
+        <div>
+            <h3>border</h3>
+            <p>Sets the border around an element.</p>
+            <pre><code>img {
+    border: 1px solid black;
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>text-align</h3>
+            <p>Aligns text within an element.</p>
+            <pre><code>h2 {
+    text-align: center;
+}</code></pre>
+        </div>
+
+
+
+        <div>
+            <h3>width and height</h3>
+            <p>Sets the width and height of an element.</p>
+            <pre><code>img {
+    width: 300px;
+    height: 200px;
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>display</h3>
+            <p>Specifies the display behavior of an element.</p>
+            <pre><code>.inline-block {
+    display: inline-block;
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>flexbox - Flexbox Layout</h3>
+            <p>Modern layout system for arranging elements.</p>
+            <pre><code>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>grid - Grid Layout</h3>
+            <p>Two-dimensional layout system for complex designs.</p>
+            <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>transform - Transform Property</h3>
+            <p>Applies 2D or 3D transformations to elements.</p>
+            <pre><code>.box {
+    transform: rotate(45deg) scale(1.2);
+    transition: transform 0.3s ease;
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>transition - Transition Property</h3>
+            <p>Creates smooth animations for property changes.</p>
+            <pre><code>.button {
+    background: blue;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    background: red;
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>box-shadow - Box Shadow</h3>
+            <p>Adds shadow effects around elements.</p>
+            <pre><code>.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>position - Position Property</h3>
+            <p>Controls the positioning method of elements.</p>
+            <pre><code>.absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.relative {
+    position: relative;
+    top: 5px;
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>z-index - Z-Index Property</h3>
+            <p>Controls the stacking order of positioned elements.</p>
+            <pre><code>.overlay {
+    position: absolute;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+}</code></pre>
+        </div>
+
+        <div>
+            <h3>opacity - Opacity Property</h3>
+            <p>Sets the transparency level of an element.</p>
+            <pre><code>.transparent {
+    opacity: 0.7;
+}
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}</code></pre>
+        </div>
+
+        <h4>End of Guide</h4>
+        <p>For more information, refer to official documentation.</p>
+        
+        <div>
+            <h3>Additional Resources</h3>
+            <p>Helpful links for learning more about HTML and CSS.</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS Documentation</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS Tutorial</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
