@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creamy White Sauce Pasta Recipe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .pasta-image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .pasta-image:hover {
+            transform: scale(1.05);
+        }
+
+        .description {
+            padding: 30px;
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #ff6b6b;
+        }
+
+        .ingredients-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .ingredient-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #ff6b6b;
+            transition: transform 0.2s ease;
+        }
+
+        .ingredient-item:hover {
+            transform: translateX(5px);
+            background: #e9ecef;
+        }
+
+        .directions-list {
+            counter-reset: step-counter;
+        }
+
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            position: relative;
+            padding-left: 60px;
+            border-left: 4px solid #ff6b6b;
+        }
+
+        .step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ff6b6b;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .step:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+            transition: all 0.2s ease;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .pasta-image {
+                width: 250px;
+                height: 167px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Creamy White Sauce Pasta</h1>
+            <div class="image-container">
+                <img src="pasta.jpg" alt="Delicious White Sauce Pasta" class="pasta-image">
+            </div>
+        </div>
+        
+        <div class="description">
+            <p><strong>A rich and creamy white sauce pasta recipe that's perfect for a satisfying dinner. This restaurant-style dish combines tender chicken, mushrooms, and penne pasta in a velvety cheese sauce that's simply irresistible.</strong></p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Ingredients</h2>
+                <div class="ingredients-list">
+                    <div class="ingredient-item">1. Boneless chicken cubes 200g</div>
+                    <div class="ingredient-item">2. Soy sauce 1 tbs</div>
+                    <div class="ingredient-item">3. Pink salt ¼ tsp or to taste</div>
+                    <div class="ingredient-item">4. Black pepper powder ¼ tsp</div>
+                    <div class="ingredient-item">5. Dried oregano ¼ tsp</div>
+                    <div class="ingredient-item">6. Cooking oil 1 tbs</div>
+                    <div class="ingredient-item">7. Mushrooms sliced 1 Cup</div>
+                    <div class="ingredient-item">8. Cooking oil 1 tsp</div>
+                    <div class="ingredient-item">9. Unsalted Butter 2-3 tbs</div>
+                    <div class="ingredient-item">10. Garlic chopped 1 tbs</div>
+                    <div class="ingredient-item">11. All-purpose flour 2 tbs</div>
+                    <div class="ingredient-item">12. Milk 2 Cups or as required</div>
+                    <div class="ingredient-item">13. Cream 1/3 Cup</div>
+                    <div class="ingredient-item">14. Cheddar cheese grated ½ Cup</div>
+                    <div class="ingredient-item">15. Red chili crushed ½ tsp</div>
+                    <div class="ingredient-item">16. Dried oregano ½ tsp</div>
+                    <div class="ingredient-item">17. Pink salt ½ tsp or to taste</div>
+                    <div class="ingredient-item">18. Black pepper crushed ½ tsp</div>
+                    <div class="ingredient-item">19. Penne pasta 250g boiled</div>
+                    <div class="ingredient-item">20. Fresh parsley chopped 2 tbs</div>
+                    <div class="ingredient-item">21. Red chili crushed for garnish</div>
+                    <div class="ingredient-item">22. Fresh parsley chopped for garnish</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Directions</h2>
+                <div class="directions-list">
+                    <div class="step">In a bowl, add chicken, soy sauce, pink salt, black pepper powder, dried oregano & mix well.</div>
+                    <div class="step">In a wok, add cooking oil, seasoned chicken, mix well & cook on medium flame for 4-5 minutes.</div>
+                    <div class="step">Add mushrooms, mix well & cook for 1-2 minutes & set aside.</div>
+                    <div class="step">In same wok, add cooking oil, margarine & let it melt.</div>
+                    <div class="step">Add garlic & sauté for a minute.</div>
+                    <div class="step">Add all-purpose flour, mix well & cook on low flame for 1-2 minutes.</div>
+                    <div class="step">Gradually add milk, mix well & cook until it thickens.</div>
+                    <div class="step">Turn off the flame, add cream, cheddar cheese, red crushed chili, dried oregano, pink salt, black pepper crushed, mix well, turn on the flame & cook for 1-2 minutes.</div>
+                    <div class="step">Add pasta, cooked chicken & mushrooms, fresh parsley & give it a good mix.</div>
+                    <div class="step">Sprinkle red chili crushed, fresh parsley & serve!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
