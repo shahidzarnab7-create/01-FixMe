@@ -1,0 +1,233 @@
+/* General Body and Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #fda085 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+header p {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+    color: #666;
+    font-style: italic;
+}
+
+/* Gallery Container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image Container Styling */
+.image-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    padding: 3px;
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb, #f5576c);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.image-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling with CSS Filters */
+img {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+    /* CSS Filters - Nature Theme Enhancement */
+    filter: 
+        saturate(120%) 
+        brightness(105%) 
+        contrast(110%) 
+        sepia(10%) 
+        hue-rotate(5deg)
+        drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    
+    transition: all 0.4s ease;
+}
+
+img:hover {
+    filter: 
+        saturate(140%) 
+        brightness(110%) 
+        contrast(115%) 
+        sepia(5%) 
+        hue-rotate(0deg)
+        drop-shadow(0 8px 25px rgba(0, 0, 0, 0.4));
+    transform: scale(1.05);
+}
+
+/* Image Information */
+.image-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.image-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #764ba2;
+    font-weight: bold;
+}
+
+.image-info p {
+    margin: 5px 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* License Information */
+.license {
+    font-size: 12px;
+    margin-top: 15px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    color: #444;
+}
+
+.license strong {
+    color: #764ba2;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    color: #666;
+    font-size: 0.9em;
+    backdrop-filter: blur(10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .image-container {
+        padding: 15px;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+}
+
+/* Special Effects for Different Images */
+.image-container:nth-child(1) img {
+    filter: 
+        saturate(130%) 
+        brightness(108%) 
+        contrast(112%) 
+        hue-rotate(10deg)
+        drop-shadow(0 5px 15px rgba(102, 126, 234, 0.3));
+}
+
+.image-container:nth-child(2) img {
+    filter: 
+        saturate(125%) 
+        brightness(110%) 
+        contrast(108%) 
+        hue-rotate(-5deg)
+        drop-shadow(0 5px 15px rgba(240, 147, 251, 0.3));
+}
+
+.image-container:nth-child(3) img {
+    filter: 
+        saturate(135%) 
+        brightness(105%) 
+        contrast(115%) 
+        hue-rotate(15deg)
+        drop-shadow(0 5px 15px rgba(118, 75, 162, 0.3));
+}
+
+.image-container:nth-child(4) img {
+    filter: 
+        saturate(140%) 
+        brightness(112%) 
+        contrast(118%) 
+        hue-rotate(20deg)
+        drop-shadow(0 5px 15px rgba(245, 87, 108, 0.3));
+}
+
+.image-container:nth-child(5) img {
+    filter: 
+        saturate(145%) 
+        brightness(108%) 
+        contrast(120%) 
+        hue-rotate(25deg)
+        drop-shadow(0 5px 15px rgba(253, 160, 133, 0.3));
+}
+
+.image-container:nth-child(6) img {
+    filter: 
+        saturate(138%) 
+        brightness(110%) 
+        contrast(116%) 
+        hue-rotate(30deg)
+        drop-shadow(0 5px 15px rgba(102, 126, 234, 0.4));
+}
