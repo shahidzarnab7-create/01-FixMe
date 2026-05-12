@@ -78,20 +78,3 @@ footer{
     text-align: center;
     padding: 15px;
 }
-
-/* Responsive */
-@media(max-width:768px){
-
-    main{
-        flex-direction: column;
-    }
-
-    .column{
-        width: 100%;
-    }
-
-    nav a{
-        display: block;
-        margin: 10px;
-    }
-}
