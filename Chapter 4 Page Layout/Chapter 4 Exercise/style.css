@@ -1,78 +1,90 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    color: #000000;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
 
 header {
     background-color: #17072b;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     padding: 20px;
+}
+
+header h1 {
     font-family: Tahoma, sans-serif;
     font-weight: 700;
 }
 
-
-nav {
-    background-color: #172d67;
-}
-
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 10px;
+    margin-top: 10px;
 }
 
-nav li {
+nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-nav a {
-    color: #FFFFFF;
+nav ul li a {
+    color: white;
     text-decoration: none;
 }
 
-
 main {
     display: flex;
+}
+
+.welcome {
+    flex: 3;
     padding: 20px;
 }
 
-
-.welcome {
-    flex: 2;
-    margin-right: 20px;
+.welcome h2 {
+    margin-bottom: 10px;
 }
 
+.welcome img {
+    width: 100%;
+    margin-top: 15px;
+}
 
 .sidebar {
     flex: 1;
     background-color: #172d67;
-    color: #FFFFFF;
-    padding: 15px;
+    color: white;
+    padding: 20px;
 }
 
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
 
 .images {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
 }
 
 .images img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 50%;
 }
-
 
 footer {
     background-color: #8c15e9;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
